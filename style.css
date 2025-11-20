@@ -35,6 +35,12 @@
     text-align: center;
 }
 
+
+figure img {
+    width: 100%;
+    max-width: 400px;
+}
+
 @media (max-width: 600px) {
     .grid-layout {
         grid-template-areas:
