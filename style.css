@@ -1,0 +1,47 @@
+.grid-layout {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "aside content"
+    "footer footer";
+    grid-template-columns: 1fr 2fr;
+    gap: 3px;
+    background-color: dodgerblue;
+    padding: 5px;
+    /* max-width: 1500px; */
+}
+
+.box {
+    background: wheat;
+    border-radius: 10px;
+}
+
+.header {
+    grid-area: header;
+    background: blue;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.content {
+    grid-area: content;
+    background: yellowgreen;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .grid-layout {
+        grid-template-areas:
+        "header"
+        "aside"
+        "content"
+        "footer";
+        grid-template-columns: 1fr;
+    }
+}
